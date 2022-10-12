@@ -6,7 +6,7 @@ const quizData = [
     c: '1995',
     d: '1999',
     e: 'nenhuma das opções acima',
-    answer: 'c',
+    correct: "c",
 },
 {
     question: 'Normalmente, quantos litros de sangue uma pessoa tem? Em média, quantos são retirados numa doação de sangue?',
@@ -15,7 +15,7 @@ const quizData = [
     c: 'Tem 10 litros. São retirados 2 litros',
     d: 'Tem 7 litros. São retirados 1,5 litros',
     e: 'Tem 0,5 litros. São retirados 0,5 litros das opções acima',
-    answer: 'b',
+    correct: "b",
 },
 {
     question: 'Quais o menor e o maior país do mundo?',
@@ -24,7 +24,7 @@ const quizData = [
     c: 'Mônaco e Canadá',
     d: 'Malta e Estados Unidos',
     e: 'São Marino e Índia',
-    answer: 'a',
+    correct: "a",
 },
 {
     question: 'Qual o livro mais vendido no mundo a seguir à Bíblia?',
@@ -33,7 +33,7 @@ const quizData = [
     c: 'Ela, a Feiticeira',
     d: 'O Pequeno Príncipe',
     e: 'Um Conto de Duas Cidades',
-    answer: 'b',
+    correct: "b",
 },
 {
     question: 'Quantos fusos horários existem na Rússia?',
@@ -42,7 +42,7 @@ const quizData = [
     c: '12',
     d: '5',
     e: '11',
-    answer: 'e',
+    correct: "e",
 },
 
 ];
@@ -107,7 +107,7 @@ submitBtn.addEventListener("click", () => {
             loadQuiz();
         } else {
             quiz.innerHTML = `
-                <h2>You answered correctly at ${score}/${quizData.length} questions.</h2>
+                <h2> Você respondeu corretamente ${score}/${quizData.length} de questões.</h2>
                 
                 <button onclick="location.reload()">Reload</button>
             `;
