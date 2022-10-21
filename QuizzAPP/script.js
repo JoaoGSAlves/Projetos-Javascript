@@ -44,7 +44,6 @@ const quizData = [
     e: '11',
     correct: "e",
 },
-
 ];
 
 const quiz = document.getElementById("quiz");
